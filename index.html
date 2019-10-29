@@ -74,8 +74,7 @@
       display: none;
       position: absolute;
       background-color: #ffffff;
-      min-width: 300px;
-      box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+      min-width: 150px;
       z-index: 1;
     }
     .dropdownContent a{
@@ -87,12 +86,15 @@
     .dropdownContent a:hover{
       background-color: #f7f7f7;
     }
-    .dropdownNav:hover .dropdownContent a{
+    
+    .dropdownNav:hover + .dropdownContent{
       display: block;
     } 
+    
     .dropdownNav:hover{
       background-color: #f7f7f7;
     }
+    
     .clearDiv{
       clear: both;
     }
