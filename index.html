@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <style>
+    *{
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    body {
+      background-color: #c8c8c8;
+
+    }
+    nav{
+      background-color: #ffffff;
+    }
+    a:link {
+      color: #000000;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #000000;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #000000;
+      text-decoration: none;
+    }
+    a:active {
+      color: yellow;
+      text-decoration: none;
+    }
+    #brandNav{
+      float: left;
+    }
+    #brandNav img{
+      height: 2.5em;
+      width: 2.5em;
+      margin: .5em .5em .5em 2em;
+    }
+    #brandNav img:hover{
+      box-shadow: 0px 0px 4px #777777;
+    }
+
+    nav ul li {
+      display: inline-block;
+      font-size: 1.2em;
+      padding: 1em;
+      border-bottom: 4px solid #ffffff;
+    }
+    nav ul li:hover{
+      border-bottom: 4px solid #7BBC00;
+    }
+    #primaryNav{
+      float: left;
+      margin: 1px 0 0 0;
+    }
+
+    #secondaryNav{
+      float: right;
+    }
+
+    .clearDiv{
+      clear: both;
+    }
+
+    .optional{
+      display: none;
+    }
+
+    .iconSmall{
+      height: 1em;
+      width: 1em;
+    }
+    </style>
+    <title>Prototype Navigation</title>
+  </head>
+  <body>
+    <nav>
+        <div id="brandNav">
+          <a href="#"><img src="logo_green.svg"></a>
+        </div>
+        <ul id="primaryNav">
+          <li class="activePrimaryNav"><a href="#">Projects</a></li>
+          <li><a href="#">Task Calendar</a></li>
+          <li><a href="#">Time Clock</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Leads</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Reports</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Community</a></li>
+          <li class="optional"><a href="#">More...</a></li>
+        </ul>
+        <ul id="secondaryNav">
+          <li><a href="#"><img class="iconSmall" src="feed.svg"></a></li>
+          <li><a href="#">G Papadopoulos <img class="iconSmall" src="down_carrot.svg"></a></li>
+          <li><a href="#"><img class="iconSmall" src="help.svg"></a></li>
+        </ul>
+        <div class="clearDiv"></div>
+    </nav>
+    <div id="mainWrapper">
+    </div>
+  </body>
+</html>
