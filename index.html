@@ -52,6 +52,7 @@
       font-size: 1.2em;
       padding: 1em;
       border-bottom: 4px solid #ffffff;
+      cursor: pointer;
     }
     nav ul li:hover{
       border-bottom: 4px solid #7BBC00;
@@ -59,13 +60,39 @@
     }
     #primaryNav{
       float: left;
-      margin: 1px 0 0 0;
+      margin: 0 0 0 0;
     }
 
     #secondaryNav{
       float: right;
     }
-
+    .dropdownNav{
+      position: relative;
+      display: inline-block;
+    }
+    .dropdownContent{
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 300px;
+      box-shadow: 0px 8px 16px 0px rgba (0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdownContent a{
+      color: #000000;
+      padding: 0.5em 0.5em 0.5em 0.5em;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdownContent a:hover{
+      background-color: #f7f7f7;
+    }
+    .dropdownNav:hover .dropdownContent a{
+      display: block;
+    } 
+    .dropdownNav:hover{
+      background-color: #f7f7f7;
+    }
     .clearDiv{
       clear: both;
     }
@@ -90,11 +117,12 @@
           <li class="activePrimaryNav"><a href="#">Projects</a></li>
           <li><a href="#">Task Calendar</a></li>
           <li><a href="#">Time Clock</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li class="dropdownNav"><a href="#">Contacts <img class="iconSmall" src="down_chevron.svg"></a></li>
+          <li class="dropdownContent"><a href="#">Clients</a><a href="#">Trade Partners</a><a href="#">Team Members</a> </li>
           <li><a href="#">Leads</a></li>
-          <li><a href="#">Templates</a></li>
-          <li><a href="#">Reports</a></li>
-          <li><a href="#">Settings</a></li>
+          <li><a href="#">Templates <img class="iconSmall" src="down_chevron.svg"></a></li>
+          <li><a href="#">Reports <img class="iconSmall" src="down_chevron.svg"></a></li>
+          <li><a href="#">Settings <img class="iconSmall" src="down_chevron.svg"></a></li>
           <li><a href="#">Community</a></li>
           <li class="optional"><a href="#">More...</a></li>
         </ul>
