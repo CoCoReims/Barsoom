@@ -73,13 +73,15 @@
     .dropdownContent{
       display: none;
       position: absolute;
+      margin: 20px 0 0 -18px;
       background-color: #ffffff;
-      min-width: 150px;
+      min-width: 140px;
       z-index: 1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .dropdownContent a{
       color: #000000;
-      padding: 0.5em 0.5em 0.5em 0.5em;
+      padding: 1em 1em 1em 1em;
       text-decoration: none;
       display: block;
     }
@@ -93,6 +95,10 @@
     
     .dropdownNav:hover{
       background-color: #f7f7f7;
+    }
+
+    .dropdownRight{
+      right: 0;
     }
     
     .clearDiv{
@@ -176,7 +182,7 @@
           <li><a href="#"><img class="iconSmall" src="feed.svg"></a></li>
           <li class="dropdownNav">
             <a href="#">G Papadopoulos <img class="iconSmall" src="down_carrot.svg"></a>
-            <div class="dropdownContent">
+            <div class="dropdownContent dropdownRight">
               <a href="#">Personal Settings</a>
               <a href="#">Notification Settings</a>
               <a href="#">Log Out</a>   
