@@ -116,6 +116,36 @@
       height: 1em;
       width: 1em;
     }
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .moreOverflow{
+        display: none;
+      }
+      .optional {
+        display: inline-block;
+      }
+      nav ul li {
+      padding: 1em .5em;
+      }
+    }
+    @media only screen and (min-width: 1230px) {
+      /* For desktop: */
+      .moreOverflow{
+        display: inline-block;
+      }
+      .optional {
+        display: none;
+      }
+      nav ul li {
+      padding: 1em;
+    }
+    }
+    
     </style>
     <title>Prototype Navigation</title>
   </head>
@@ -136,8 +166,8 @@
               <a href="#">Team Members</a> 
             </div>
           </li>
-          <li><a href="#">Leads</a></li>
-          <li class="dropdownNav">
+          <li class="moreOverflow"><a href="#">Leads</a></li>
+          <li class="dropdownNav moreOverflow">
             <a href="#">Templates <img class="iconSmall" src="down_chevron.svg"></a>
             <div class="dropdownContent">
               <a href="#">Estimates</a>
@@ -146,7 +176,7 @@
               <a href="#">Cost Catalog</a> 
             </div>
           </li>
-          <li class="dropdownNav">
+          <li class="dropdownNav moreOverflow">
             <a href="#">Reports <img class="iconSmall" src="down_chevron.svg"></a>
             <div class="dropdownContent">
               <a href="#">All Tasks</a>
@@ -165,7 +195,7 @@
               <a href="#">Job Log</a>    
             </div>
           </li>
-          <li class="dropdownNav">
+          <li class="dropdownNav moreOverflow">
             <a href="#">Settings <img class="iconSmall" src="down_chevron.svg"></a>
             <div class="dropdownContent">
               <a href="#">Personal</a>
@@ -178,7 +208,7 @@
               <a href="#">Lead Intake Form</a>
             </div>
           </li>
-          <li><a href="#">Community</a></li>
+          <li class="moreOverflow"><a href="#">Community</a></li>
           <li class="optional"><a href="#">More...</a></li>
         </ul>
         <ul id="secondaryNav">
