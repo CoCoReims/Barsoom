@@ -87,7 +87,7 @@
       background-color: #f7f7f7;
     }
     
-    .dropdownNav:hover + .dropdownContent{
+    .dropdownNav:hover .dropdownContent{
       display: block;
     } 
     
@@ -119,19 +119,69 @@
           <li class="activePrimaryNav"><a href="#">Projects</a></li>
           <li><a href="#">Task Calendar</a></li>
           <li><a href="#">Time Clock</a></li>
-          <li class="dropdownNav"><a href="#">Contacts <img class="iconSmall" src="down_chevron.svg"></a></li>
-          <li class="dropdownContent"><a href="#">Clients</a><a href="#">Trade Partners</a><a href="#">Team Members</a> </li>
+          <li class="dropdownNav">
+            <a href="#">Contacts <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Clients</a>
+              <a href="#">Trade Partners</a>
+              <a href="#">Team Members</a> 
+            </div>
+          </li>
           <li><a href="#">Leads</a></li>
-          <li><a href="#">Templates <img class="iconSmall" src="down_chevron.svg"></a></li>
-          <li><a href="#">Reports <img class="iconSmall" src="down_chevron.svg"></a></li>
-          <li><a href="#">Settings <img class="iconSmall" src="down_chevron.svg"></a></li>
+          <li class="dropdownNav">
+            <a href="#">Templates <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Estimates</a>
+              <a href="#">Schedules</a>
+              <a href="#">Proposals</a>
+              <a href="#">Cost Catalog</a> 
+            </div>
+          </li>
+          <li class="dropdownNav">
+            <a href="#">Reports <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">All Tasks</a>
+              <a href="#">Open Tasks</a>
+              <a href="#">All Projects</a>
+              <a href="#">Purchase Orders</a>
+              <a href="#">Variance Purchase Orders</a>
+              <a href="#">Invoices</a>
+              <a href="#">Questions</a>
+              <a href="#">To-Dos</a>
+              <a href="#">Specs/Selections</a>
+              <a href="#">Change Orders</a>
+              <a href="#">Messages</a>
+              <a href="#">Schedule</a>
+              <a href="#">Warranty</a>
+              <a href="#">Job Log</a>    
+            </div>
+          </li>
+          <li class="dropdownNav">
+            <a href="#">Settings <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Personal</a>
+              <a href="#">Account</a>
+              <a href="#">Schedule</a>
+              <a href="#">Estimating</a>
+              <a href="#">Accounting</a>
+              <a href="#">Trade Partners</a>
+              <a href="#">Holidays</a>
+              <a href="#">Lead Intake Form</a>
+            </div>
+          </li>
           <li><a href="#">Community</a></li>
           <li class="optional"><a href="#">More...</a></li>
         </ul>
         <ul id="secondaryNav">
           <li><a href="#"><img class="iconSmall" src="feed.svg"></a></li>
-          <li><a href="#">G Papadopoulos <img class="iconSmall" src="down_carrot.svg"></a></li>
-          <li><a href="#"><img class="iconSmall" src="help.svg"></a></li>
+          <li class="dropdownNav">
+            <a href="#">G Papadopoulos <img class="iconSmall" src="down_carrot.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Personal Settings</a>
+              <a href="#">Notification Settings</a>
+              <a href="#">Log Out</a>   
+            </div>
+          </li>
         </ul>
         <div class="clearDiv"></div>
     </nav>
