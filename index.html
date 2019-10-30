@@ -35,6 +35,156 @@
       color: yellow;
       text-decoration: none;
     }
+    #brandNav img{
+      height: 2.5em;
+      width: 2.5em;
+      margin: .5em .5em .5em .5em;
+    }
+    #brandNav img:hover{
+      box-shadow: 0px 0px 4px #777777;
+    }
+
+    nav ul li {
+      display: block;
+      font-size: 1.2em;
+      padding: 1em .5em;
+      border-bottom: 4px solid #ffffff;
+      cursor: pointer;
+    }
+    nav ul li:hover{
+      border-bottom: 4px solid #7BBC00;
+      background-color: #f7f7f7;
+    }
+    #primaryNav{
+      margin: 0 0 0 0;
+    }
+
+    #secondaryNav{
+      margin: 0 1em 0 0;
+    }
+    .dropdownNav{
+      position: relative;
+      display: block;
+    }
+    .dropdownContent{
+      display: none;
+      position: absolute;
+      margin: 20px 0 0 -18px;
+      background-color: #ffffff;
+      min-width: 140px;
+      z-index: 1;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .dropdownContent a{
+      color: #000000;
+      padding: 1em 1em 1em 1em;
+      line-height: 1.2em;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdownContent a:hover{
+      background-color: #f7f7f7;
+    }
+    
+    .dropdownNav:hover .dropdownContent{
+      display: block;
+    } 
+    
+    .dropdownNav:hover{
+      background-color: #f7f7f7;
+    }
+
+    .dropdownRight{
+      right: 0;
+      min-width: 150px;
+    }
+    
+    .clearDiv{
+      clear: both;
+    }
+
+
+    .iconSmall{
+      height: 1em;
+      width: 1em;
+    }
+    /* For mobile phones: */
+    
+    #secondaryNav{
+        display: block;
+      }
+      nav ul li {
+      padding: 1em .5em;
+      }
+      .moreOverflow{
+        display: block;
+      }
+      .optional {
+        display: none;
+      }
+    @media only screen and (min-width: 580px) {
+      /* For tablets: */
+      #brandNav{
+        float: left;
+      }
+
+      #brandNav img{
+        height: 2.5em;
+        width: 2.5em;
+        margin: .5em .5em .5em 2em;
+      }
+      nav ul li {
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 1em .5em;
+        border-bottom: 4px solid #ffffff;
+        cursor: pointer;
+      }
+      nav ul li:hover{
+        border-bottom: 4px solid #7BBC00;
+        background-color: #f7f7f7;
+      }
+      #primaryNav{
+      float: left;
+      margin: 0 0 0 0;
+    }
+
+    #secondaryNav{
+      float: right;
+      margin: 0 1em 0 0;
+      display: none;
+    }
+
+    .optional {
+      display: inline-block;
+    }
+    .dropdownNav{
+      display: inline-block;
+    }
+
+    .moreOverflow{
+      display: none;
+    }
+      
+    }
+    @media only screen and (min-width: 685px) {
+      /* For tablets: */
+      
+      #secondaryNav{
+        display: inline-block;
+      }
+    }
+    @media only screen and (min-width: 1230px) {
+      /* For desktop: */
+      .moreOverflow{
+        display: inline-block;
+      }
+      .optional {
+        display: none;
+      }
+      nav ul li {
+      padding: 1em;
+    }
     #brandNav{
       float: left;
     }
@@ -102,47 +252,6 @@
     .dropdownRight{
       right: 0;
       min-width: 150px;
-    }
-    
-    .clearDiv{
-      clear: both;
-    }
-
-    .optional{
-      display: none;
-    }
-
-    .iconSmall{
-      height: 1em;
-      width: 1em;
-    }
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-
-    @media only screen and (min-width: 600px) {
-      /* For tablets: */
-      .moreOverflow{
-        display: none;
-      }
-      .optional {
-        display: inline-block;
-      }
-      nav ul li {
-      padding: 1em .5em;
-      }
-    }
-    @media only screen and (min-width: 1230px) {
-      /* For desktop: */
-      .moreOverflow{
-        display: inline-block;
-      }
-      .optional {
-        display: none;
-      }
-      nav ul li {
-      padding: 1em;
     }
     }
     
