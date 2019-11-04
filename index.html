@@ -108,6 +108,27 @@
       height: 1em;
       width: 1em;
     }
+
+    #projectNav{
+      display: flex;
+      margin: 2em 0;
+    }
+
+    #projectNav ul{
+      margin: auto;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+    }
+
+    #projectNav li{
+      padding: 1em 1em 1em 1em;
+      display: inline-block;
+    }
+
+    #projectNav li:hover{
+      background-color: #f7f7f7;
+    }
     /* For mobile phones: */
     
     #secondaryNav{
@@ -333,6 +354,41 @@
         <div class="clearDiv"></div>
     </nav>
     <div id="mainWrapper">
+      <div id="projectNav">
+        <ul>
+          <li class="activePrimaryNav"><a href="#">Overview</a></li>
+          <li class="dropdownNav">
+            <a href="#">Financials <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Estimate</a>
+              <a href="#">Bids</a>
+              <a href="#">Purchase Orders</a>
+              <a href="#">Summary</a>
+              <a href="#">Budget</a>
+              <a href="#">Invoices</a> 
+            </div>
+          </li>
+          <li class="dropdownNav">
+            <a href="#">Schedule <img class="iconSmall" src="down_chevron.svg"></a>
+            <div class="dropdownContent">
+              <a href="#">Field Update</a>
+              <a href="#">Gantt</a>
+              <a href="#">Calendar</a>
+              <a href="#">Tasks</a>
+              <a href="#">Baseline</a> 
+            </div>
+          </li>
+          <li><a href="#">Specs & Selections</a></li>
+          <li><a href="#">Change Orders</a></li>
+          <li><a href="#">Files & Photos</a></li>
+          <li><a href="#">To-dos</a></li>
+          <li><a href="#">Messages</a></li>
+          <li><a href="#">Job Log</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Setup</a></li>
+        </ul>
+        <div class="clearDiv"></div>
+      </div> <!-- projectNav div close -->
     </div>
   </body>
 </html>
