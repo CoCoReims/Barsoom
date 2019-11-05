@@ -118,8 +118,34 @@
     }
 
     #projectNav{
-      display: flex;
-      margin: 2em 0;
+      display: block;
+      margin: 1em auto;
+      width: 1000px;
+    }
+
+    #projectSearch{
+      margin: 1em auto;
+    }
+
+    #projectsDrop{
+      float: left;
+    }
+
+    #projectsDrop h4{
+      display: inline-block;
+      padding: .5em 0 0 0;
+      font-size: 1.5em;
+    }
+
+    #searchContainer{
+      float: right;
+      padding: .5em;
+      background-color: #ffffff;
+    }
+
+    #searchContainer input{
+      border: none;
+      padding: 0 0 0 .5em;
     }
 
     #projectNav ul{
@@ -128,15 +154,18 @@
     }
 
     #projectNav li{
-      padding: 1em 1em 10px 1em;
+      padding: 1em 1em 1em 1em;
       display: inline-block;
-      border-bottom: 4px solid #ffffff;
 
     }
 
     #projectNav li:hover{
       background-color: #f7f7f7;
-      border-bottom: 4px solid #7BBC00;
+    }
+
+    .iconMed{
+      width: 18px;
+      height: 18px;
     }
     /* For mobile phones: */
     
@@ -364,6 +393,11 @@
     </nav>
     <div id="mainWrapper">
       <div id="projectNav">
+        <div id="projectSearch">
+          <div id="projectsDrop"><h4>Projects</h4> <img class="iconSmall" src="down_chevron.svg"></div>
+          <div id="searchContainer"><img class="iconMed" src="searchIcon.svg"> <input type="text" name="search" placeholder="Search"></div>
+          <div class="clearDiv"></div>
+        </div>
         <ul>
           <li class="activePrimaryNav"><a href="#">Overview</a></li>
           <li class="dropdownNav">
@@ -372,6 +406,7 @@
               <a href="#">Estimate</a>
               <a href="#">Bids</a>
               <a href="#">Purchase Orders</a>
+              <a href="#">Change Orders</a>
               <a href="#">Summary</a>
               <a href="#">Budget</a>
               <a href="#">Invoices</a> 
@@ -388,7 +423,6 @@
             </div>
           </li>
           <li><a href="#">Specs & Selections</a></li>
-          <li><a href="#">Change Orders</a></li>
           <li><a href="#">Files & Photos</a></li>
           <li><a href="#">To-dos</a></li>
           <li><a href="#">Messages</a></li>
@@ -398,6 +432,6 @@
         </ul>
         <div class="clearDiv"></div>
       </div> <!-- projectNav div close -->
-    </div>
+    </div> <!-- mainWrapper div close -->
   </body>
 </html>
