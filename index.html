@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <style>
+    
+    #myAccount::after{
+      content: "Mark";
+    }
     *{
       margin: 0 0 0 0;
       padding: 0 0 0 0;
@@ -18,6 +22,11 @@
     }
     nav{
       background-color: #ffffff;
+      position: fixed;
+      width: 100%;
+      top:0;
+      z-index: 10;
+      box-shadow: 0 0 8px #999;
     }
     a:link {
       color: #000000;
@@ -35,6 +44,7 @@
       color: yellow;
       text-decoration: none;
     }
+
     #brandNav{
       margin: 0 0 0 0;
     }
@@ -168,6 +178,10 @@
     .iconMed{
       width: 18px;
       height: 18px;
+    }
+
+    #mainWrapper{
+      margin: 70px 0 0 0;
     }
 
     #screenWrapper{
@@ -335,7 +349,7 @@
         </div>
         <ul id="primaryNav">
           <li class="activePrimaryNav"><a href="#">Projects</a></li>
-          <li><a href="#">Task Calendar</a></li>
+          <li><a href="#">Calendar</a></li>
           <li><a href="#">Time Clock</a></li>
           <li class="dropdownNav">
             <a href="#">Contacts <img class="iconSmall" src="down_chevron.svg"></a>
@@ -392,7 +406,7 @@
         </ul>
         <ul id="secondaryNav">
           <li class="dropdownNav">
-            <a href="#">Benedictius <img class="iconSmall" src="down_carrot.svg"></a>
+            <a href="#"><span id="myAccount"></span> <img class="iconSmall" src="down_carrot.svg"></a>
             <div class="dropdownContent dropdownRight">
               <a href="#">Personal Settings</a>
               <a href="#">Notification Settings</a>
@@ -405,7 +419,7 @@
     <div id="mainWrapper">
       <div id="projectNav">
         <div id="projectSearch">
-          <div id="projectsDrop"><h4>Projects</h4> <img class="iconSmall" src="down_chevron.svg"></div>
+          <div id="projectsDrop"><h4>All Projects</h4> <img class="iconSmall" src="down_chevron.svg"></div>
           <div id="searchContainer"><img class="iconMed" src="searchIcon.svg"> <input type="text" name="search" placeholder="Search"></div>
           <div class="clearDiv"></div>
         </div>
