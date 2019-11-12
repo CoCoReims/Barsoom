@@ -183,6 +183,10 @@
       display: block;
       margin: 0 auto;
     }
+
+    #screenWrapper a{
+      border: none;
+    }
     /* For mobile phones: */
     
     #secondaryNav{
